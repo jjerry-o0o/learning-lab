@@ -5,6 +5,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
+import java.util.List;
+
 public class JpaMain {
 
     public static void main(String[] args) {
@@ -87,9 +89,11 @@ public class JpaMain {
 //            em.detach(member);
 
             // 영속성 관리 clear - 1차 캐시에 데이터가 없어서 쿼리 2번 실행 됨.
-            Member member1 = em.find(Member.class, 150L);
-            em.clear();
-            Member member2 = em.find(Member.class, 150L);
+//            Member member1 = em.find(Member.class, 150L);
+//            em.clear();
+//            Member member2 = em.find(Member.class, 150L);
+
+
 
             tx.commit();
         } catch (Exception e) {

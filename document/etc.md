@@ -62,3 +62,16 @@ __> 접미사 관련__
 - Boolean 형의 경우 is / can 접두어 사용
 - 클래스 전체에 통용되는 클래스형의 변수는 m / g 접두어 사용
 - 변수명에는 주석을 달아 변수에 대한 설명 첨부
+
+### 계층별 메서드명 규칙
+__> Controller__
+- 주로 HTTP 요청 메서드(GET,POST,PUT,DELETE 등)와 관련된 동사 사용   
+  ex. getUserById, createUser, UpdateUser, deleteUser
+
+__> Service__
+- 비즈니스 로직, 처리 업무 관련된 동사 + 명사 형태 사용   
+  ex. processOrder, calculateTotalPrice
+
+__> Repository__
+- 주로 CRUD 기능과 관련된 동사 사용   
+  ex. findById, save, delete
